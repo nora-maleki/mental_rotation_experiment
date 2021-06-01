@@ -2,7 +2,7 @@
 
 
 /*const trial_info = {
-    key_pressed: [
+    forced_choice: [
         {
             question: "What's on the bread?",
             picture: "images/question_mark_02.png",
@@ -21,7 +21,7 @@
 };*/
 
 const trial_info = {
-    key_pressed: [
+    key_press: [
         {
             question: "Are these the same object or different objects?",
             picture: 'images/1_50_different.jpg',
