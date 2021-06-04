@@ -104,12 +104,11 @@ const thanks = magpieViews.view_generator("thanks", {
 
 // Here, we initialize a normal forced_choice view
 const key_press_2A = magpieViews.view_generator("key_press", {
-// const key_pressed_2A = magpieViews.view_generator("key_pressed", {
   // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
   trials: trial_info.key_press.length,
   // name should be identical to the variable name
   name: 'key_press_2A',
-  data: trial_info.key_press,
+  data: _.shuffle(trial_info.key_press),
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
   //     after_response_enabled: check_response
