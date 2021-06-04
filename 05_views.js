@@ -39,11 +39,25 @@ const instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'General Instructions',
-  text: `This is a sample instructions view.
+  text: `<p style="text-align:center;">
+            In each trial of this experiment you will see two objects.
+            <br />
+            You should decide whether these objects are two different presentations of
+            <br />the <strong>same</strong> object or they are <strong>different</strong> objects.
             <br />
             <br />
-            Tell your participants what they are to do here.`,
-  buttonText: 'go to trials'
+            Press <strong>F</strong> if they are the same object or press <strong>J</strong> if they are different. 
+            <br />
+            Please choose as fast as possible.
+            <br />
+            <br />
+            You will first do the practice trials and after that proceed to the main trials.
+            <br />
+            You will be informed before starting the main trial.
+            <br />
+            <br />
+            Please press the button below to proceed.</p>`,
+  buttonText: 'go to practice trials'
 });
 
 
