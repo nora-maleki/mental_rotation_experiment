@@ -39,6 +39,33 @@ const trial_info = {
             f: 'same',
             j: 'different',
             expected: 'same'
+        },
+        {
+            question: "Are these the same object or different objects?",
+            picture: 'images/1_150_different.jpg',
+            key1: 'f',
+            key2: 'j',
+            f: 'same',
+            j: 'different',
+            expected: 'different'
+        },
+        {
+            question: "Are these the same object or different objects?",
+            picture: 'images/1_150_same.jpg',
+            key1: 'f',
+            key2: 'j',
+            f: 'same',
+            j: 'different',
+            expected: 'same'
+        },
+        {
+            question: "Are these the same object or different objects?",
+            picture: 'images/2_50_different.jpg',
+            key1: 'f',
+            key2: 'j',
+            f: 'same',
+            j: 'different',
+            expected: 'different'
         }
     ]
 };
