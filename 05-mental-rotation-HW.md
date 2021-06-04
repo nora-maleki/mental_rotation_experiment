@@ -7,14 +7,14 @@
     - [x] more on this here: https://magpie-ea.github.io/magpie-site/experiments/05views.html
     - [x] in particular, you need the 'key-press' template view which is documented here: https://magpie-ea.github.io/magpie-docs/01_designing_experiments/01_template_views/#key-press
   - [x] key presses should be recorded as "same" and "different" (i.e., they should show up as one of these strings in the final table output)
-  - [ ] code the key press choices as "correct" or "incorrect" based on the picture shown
+  - [x] code the key press choices as "correct" or "incorrect" based on the picture shown
   - [x] pick pictures from the 60 mental rotation pictures (no matter which)
-  - [ ] add appropriate trial information (in `04_trials.js`) for these five pictures (so that this is shown in the final output; because we might need it for analysis):
+  - [x] add appropriate trial information (in `04_trials.js`) for these five pictures (so that this is shown in the final output; because we might need it for analysis):
     - [x] number of picture shown
     - [x] degree of rotation
-    - [ ] whether the picture's objects are indeed "same" or "different"
+    - [x] whether the picture's objects are indeed "same" or "different"
 
-- [ ] optionally:
-  - [ ] randomize the five trials using the command `_.shuffle()` from the [lodash library](https://lodash.com) which is (super useful (!) and) loaded automatically with _babe
+- optionally:
+  - [x] randomize the five trials using the command `_.shuffle()` from the [lodash library](https://lodash.com) which is (super useful (!) and) loaded automatically with _babe
   
 
