@@ -23,14 +23,14 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `This is a sample introduction view.
+  text: `<p style="text-align:center;">
+            Welcome to the experiment.
             <br />
             <br />
-            The introduction view welcomes the participant and gives general information
-            about the experiment. You are in the <strong>${coin}</strong> group.
+            You are taking part in a short experiment that takes ca. 10 minutes.
             <br />
             <br />
-            This is a minimal experiment with one forced choice view. It can serve as a starting point for programming your own experiment.`,
+            We appreciate the time you are taking to participate in this experiment.</p>`,
   buttonText: 'begin the experiment'
 });
 
