@@ -123,6 +123,7 @@ const key_press_2A = magpieViews.view_generator("key_press", {
   // name should be identical to the variable name
   name: 'key_press_2A',
   data: _.shuffle(trial_info.key_press),
+  pause: 250
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
   //     after_response_enabled: check_response
