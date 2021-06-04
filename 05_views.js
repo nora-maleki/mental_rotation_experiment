@@ -46,7 +46,8 @@ const instructions = magpieViews.view_generator("instructions", {
             <br />the <strong>same</strong> object or they are <strong>different</strong> objects.
             <br />
             <br />
-            Press <strong>F</strong> if they are the same object or press <strong>J</strong> if they are different. 
+            Press <strong>F</strong> if they are the <strong>same</strong> 
+            object or press <strong>J</strong> if they are <strong>different</strong>. 
             <br />
             Please choose as fast as possible.
             <br />
