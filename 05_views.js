@@ -159,11 +159,11 @@ const key_press_practice = magpieViews.view_generator("key_press", {
 });
 
 // Here, we initialize a normal key_press view as main trials
-const key_press_2A = magpieViews.view_generator("key_press", {
+const key_press_main = magpieViews.view_generator("key_press", {
   // This will use all trials specified in `data`, you can use a smaller value (for testing), but not a larger value
   trials: trial_info.key_press.length,
   // name should be identical to the variable name
-  name: 'key_press_2A',
+  name: 'key_press_main',
   data: _.shuffle(trial_info.key_press),
   pause: 250
   // you can add custom functions at different stages through a view's life cycle
