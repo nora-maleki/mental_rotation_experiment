@@ -30,7 +30,7 @@ const intro = magpieViews.view_generator("intro", {
             You are taking part in a short experiment that takes ca. 10 minutes.
             <br />
             <br />
-            We appreciate the time you are taking to participate in this experiment.</p>`,
+            We appreciate the time you are taking to to help us.</p>`,
   buttonText: 'begin the experiment'
 });
 
@@ -40,7 +40,10 @@ const instructions = magpieViews.view_generator("instructions", {
   name: 'instructions',
   title: 'General Instructions',
   text: `<p style="text-align:center;">
-            In each trial of this experiment you will see two objects.
+            This experiment consists of two parts. Practice trials and main trials.
+            <br />
+            <br />
+            In each trial you will see two objects.
             <br />
             You should decide whether these objects are two different presentations of
             <br />the <strong>same</strong> object or they are <strong>different</strong> objects.
@@ -48,7 +51,9 @@ const instructions = magpieViews.view_generator("instructions", {
             <br />
             Press <strong>F</strong> if they are the <strong>same</strong> object.
             <br />
+            <br />
             Press <strong>J</strong> if they are <strong>different</strong>. 
+            <br />
             <br />
             Please choose as fast as possible.
             <br />
@@ -78,7 +83,6 @@ const main_instructions = magpieViews.view_generator("instructions", {
             <br />
             Press <strong>F</strong> if the objects are the <strong>same</strong>
             <br />
-            and
             <br />
             Press <strong>J</strong> if they are <strong>different</strong>
             <br />
@@ -86,7 +90,7 @@ const main_instructions = magpieViews.view_generator("instructions", {
             Please choose as fast as possible.
             <br />
             <br />
-            Please press the button below to proceed.</p>`,
+            Press the button below to proceed.</p>`,
   buttonText: 'start experiment'
 });
 
@@ -144,7 +148,6 @@ const thanks = magpieViews.view_generator("thanks", {
 * https://magpie-ea.github.io/magpie-docs/01_designing_experiments/01_template_views/#trial-views
 */
 
-// todo implement the practice trials
 // Here, we initialize a normal key_press view as practice trials
 const key_press_practice = magpieViews.view_generator("key_press", {
   // This will use all trials specified in `data`, you can use a smaller value (for testing), but not a larger value
