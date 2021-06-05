@@ -144,8 +144,10 @@ const thanks = magpieViews.view_generator("thanks", {
 * https://magpie-ea.github.io/magpie-docs/01_designing_experiments/01_template_views/#trial-views
 */
 
+// todo implement the practice trials
 
-// Here, we initialize a normal forced_choice view
+
+// Here, we initialize a normal key_press view as main trials
 const key_press_2A = magpieViews.view_generator("key_press", {
   // This will use all trials specified in `data`, you can use a smaller value (for testing), but not a larger value
   trials: trial_info.key_press.length,
