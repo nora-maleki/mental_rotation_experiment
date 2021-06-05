@@ -17,6 +17,8 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions,
+            key_press_practice,
+            main_instructions,
             key_press_2A,
             post_test,
             thanks,
@@ -37,6 +39,7 @@ $("document").ready(function() {
             in: [
                 // list the view-names of the views for which you want a progress bar
                 key_press_2A.name,
+                key_press_practice.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",
