@@ -46,8 +46,9 @@ const instructions = magpieViews.view_generator("instructions", {
             <br />the <strong>same</strong> object or they are <strong>different</strong> objects.
             <br />
             <br />
-            Press <strong>F</strong> if they are the <strong>same</strong> 
-            object or press <strong>J</strong> if they are <strong>different</strong>. 
+            Press <strong>F</strong> if they are the <strong>same</strong> object.
+            <br />
+            Press <strong>J</strong> if they are <strong>different</strong>. 
             <br />
             Please choose as fast as possible.
             <br />
@@ -119,7 +120,7 @@ const thanks = magpieViews.view_generator("thanks", {
 
 // Here, we initialize a normal forced_choice view
 const key_press_2A = magpieViews.view_generator("key_press", {
-  // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+  // This will use all trials specified in `data`, you can use a smaller value (for testing), but not a larger value
   trials: trial_info.key_press.length,
   // name should be identical to the variable name
   name: 'key_press_2A',
@@ -132,5 +133,5 @@ const key_press_2A = magpieViews.view_generator("key_press", {
 });
 
 // There are many more templates available:
-// forced_choice, slider_rating, dropdown_choice, testbox_input, rating_scale, image_selection, sentence_choice,
+// forced_choice, slider_rating, dropdown_choice, textbox_input, rating_scale, image_selection, sentence_choice,
 // key_press, self_paced_reading and self_paced_reading_rating_scale
