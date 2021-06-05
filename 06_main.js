@@ -17,6 +17,8 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions,
+            // todo call the practice trials
+            main_instructions,
             key_press_2A,
             post_test,
             thanks,
