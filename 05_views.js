@@ -62,6 +62,33 @@ const instructions = magpieViews.view_generator("instructions", {
   buttonText: 'go to practice trials'
 });
 
+// For most tasks, you need instructions views
+const main_instructions = magpieViews.view_generator("instructions", {
+  trials: 1,
+  name: 'instructions',
+  title: 'Main Experiment Instructions',
+  text: `<p style="text-align:center;">
+            You are now ready to begin the main experiment.
+            <br />
+            There will be no feedback in this session.
+            <br />
+            <br />
+            <strong>Reminder:</strong>
+            <br />
+            <br />
+            Press <strong>F</strong> if the objects are the <strong>same</strong>
+            <br />
+            and
+            <br />
+            Press <strong>J</strong> if they are <strong>different</strong>
+            <br />
+            <br />
+            Please choose as fast as possible.
+            <br />
+            <br />
+            Please press the button below to proceed.</p>`,
+  buttonText: 'start experiment'
+});
 
 // In the post test questionnaire you can ask your participants addtional questions
 const post_test = magpieViews.view_generator("post_test", {
