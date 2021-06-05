@@ -145,7 +145,15 @@ const thanks = magpieViews.view_generator("thanks", {
 */
 
 // todo implement the practice trials
-
+// Here, we initialize a normal key_press view as practice trials
+const key_press_practice = magpieViews.view_generator("key_press", {
+  // This will use all trials specified in `data`, you can use a smaller value (for testing), but not a larger value
+  trials: trial_info_practice.key_press.length,
+  // name should be identical to the variable name
+  name: 'key_press_practice',
+  data: _.shuffle(trial_info_practice.key_press),
+  pause: 250
+});
 
 // Here, we initialize a normal key_press view as main trials
 const key_press_2A = magpieViews.view_generator("key_press", {
