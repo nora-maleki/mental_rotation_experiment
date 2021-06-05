@@ -135,7 +135,7 @@ const trial_info_practice = {
             key2: 'j',
             f: 'same',
             j: 'different'
-        }
+        },
     ]
 };
 
@@ -668,6 +668,6 @@ const trial_info = {
             key2: 'j',
             f: 'same',
             j: 'different'
-        }
+        },
     ]
 };
