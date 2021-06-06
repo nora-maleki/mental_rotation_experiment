@@ -23,15 +23,14 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `<p style="text-align:center;">
-            Welcome to the experiment.
+  text: `Welcome to the experiment.
             <br />
             <br />
             You are taking part in a short experiment that takes ca. 10 minutes.
             <br />
             <br />
-            We appreciate the time you are taking to to help us.</p>`,
-  buttonText: 'begin the experiment'
+            We appreciate the time you are taking to to help us.`,
+  buttonText: 'continue'
 });
 
 // For most tasks, you need instructions views
@@ -39,23 +38,21 @@ const instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'General Instructions',
-  text: `<p style="text-align:center;">
-            This experiment consists of two parts. Practice trials and main trials.
+  text: `This experiment consists of two parts. Practice trials and main trials.
             <br />
             <br />
             In each trial you will see two objects.
             <br />
-            You should decide whether these objects are two different presentations of
-            <br />the <strong>same</strong> object or they are <strong>different</strong> objects.
+            You should decide whether these objects are two different presentations of 
+            the <strong>same</strong> object or they are <strong>different</strong> objects.
             <br />
             <br />
             Press <strong>F</strong> if they are the <strong>same</strong> object.
             <br />
-            <br />
             Press <strong>J</strong> if they are <strong>different</strong>. 
             <br />
             <br />
-            Please choose as fast as possible.
+            Please react as fast as possible.
             <br />
             <br />
             You will first do the practice trials and after that proceed to the main trials.
@@ -63,8 +60,8 @@ const instructions = magpieViews.view_generator("instructions", {
             You will be informed before starting the main trial.
             <br />
             <br />
-            Please press the button below to proceed.</p>`,
-  buttonText: 'go to practice trials'
+            Please press the button below to proceed.`,
+  buttonText: 'start practice trials'
 });
 
 // For most tasks, you need instructions views
@@ -72,25 +69,23 @@ const main_instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'Main Experiment Instructions',
-  text: `<p style="text-align:center;">
-            You are now ready to begin the main experiment.
+  text: `You are now ready to begin the main experiment.
             <br />
             There will be no feedback in this session.
             <br />
             <br />
-            <strong>Reminder:</strong>
+            <strong><i>Reminder:</i></strong>
             <br />
             <br />
             Press <strong>F</strong> if the objects are the <strong>same</strong>
             <br />
-            <br />
             Press <strong>J</strong> if they are <strong>different</strong>
             <br />
             <br />
-            Please choose as fast as possible.
+            Please react as fast as possible.
             <br />
             <br />
-            Press the button below to proceed.</p>`,
+            Press the button below to proceed.`,
   buttonText: 'start experiment'
 });
 
@@ -159,11 +154,11 @@ const key_press_practice = magpieViews.view_generator("key_press", {
 });
 
 // Here, we initialize a normal key_press view as main trials
-const key_press_2A = magpieViews.view_generator("key_press", {
+const key_press_main = magpieViews.view_generator("key_press", {
   // This will use all trials specified in `data`, you can use a smaller value (for testing), but not a larger value
   trials: trial_info.key_press.length,
   // name should be identical to the variable name
-  name: 'key_press_2A',
+  name: 'key_press_main',
   data: _.shuffle(trial_info.key_press),
   pause: 250
   // you can add custom functions at different stages through a view's life cycle

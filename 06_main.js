@@ -19,26 +19,26 @@ $("document").ready(function() {
             instructions,
             key_press_practice,
             main_instructions,
-            key_press_2A,
+            key_press_main,
             post_test,
             thanks,
         ],
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "INSERT_A_NUMBER",
-            serverAppURL: "https://magpie-demo.herokuapp.com/api/submit_experiment/",
+            experimentID: "219",
+            serverAppURL: "https://magpie-demo.herokuapp.com/api/submit_experiment/219",
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
             deployMethod: "debug",
-            contact_email: "YOUREMAIL@wherelifeisgreat.you",
+            contact_email: "noora.maleki@gmail.com",
             prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
         // Here, you can specify how the progress bar should look like
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                key_press_2A.name,
+                key_press_main.name,
                 key_press_practice.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
