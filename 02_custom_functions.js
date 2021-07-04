@@ -51,9 +51,25 @@ const time_limit = function(data, next) {
 
 // compares the chosen answer to the value of `option1`
 check_response = function(data, next) {
-    $('input[name=answer]').on('change', function(e) {
-        if (e.target.value === data.correct) {
-            alert('Your answer is correct! Yey!');
+
+    $('body').on('keydown', function(e) {
+
+        if((e.key.localeCompare(data.key1)!=0) && (e.key.localeCompare(data.key2)!=0)) return;
+        console.log('expected: ' + data.expected)
+        console.log('value as key?: ' + data[e.key])
+        // var eq = Object.toJSON(user1) == Object.toJSON(user2);
+        console.log('data[e.key] === data.expected: ' + data[e.key].localeCompare(data.expected)==0)
+        console.log('data[e.key] === data.expected: ' + data[e.key].normalize()===data.expected.normalize())
+        // console.log('key: ' + e.key + '   target value: ' + e.target)
+
+        // let key_value =
+        // console.log('key 1: ' + data.key1 + '   key 2: ' + data.key2)
+        // console.log('key 1 type: ' + typeof(data.key1) + '   e.key type: ' + typeof(e.key))
+        // console.log('   key==key1: ' + e.key.localeCompare(data.key1)==0)
+        // console.log('   key==key2: ' + e.key.localeCompare(data.key2)==0)
+        if (data[e.key] === data.expected)
+        {
+            $('#correct').text('Correct!').show().delay(20).fadeOut(0);
         } else {
             alert('Sorry, this answer is incorrect :( The correct answer was ' + data.correct);
         }
